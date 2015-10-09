@@ -5,13 +5,26 @@ $(window).resize(function ()
 
 $(document).ready(function ()
 {
-    Resize();
+
+    var slideout = new Slideout({
+        'panel': document.getElementById('body'),
+        //'panel': document.getElementsByClassname('container'),
+        'menu': document.getElementById('menu'),
+        'padding': 256,
+        'tolerance': 70
+    });
 
     //event handlers
-    $('a.responsive-menu').click(function ()
+    $('a.slideout-toggle').click(function ()
     {
-        $('.nav-responsive-container').slideToggle('fast');
+        //$('.nav-responsive-container').slideToggle('fast');
+        slideout.toggle();
     });
+
+
+
+    Resize();
+
 
 
     //--Colorbox
@@ -66,7 +79,6 @@ function Resize()
     //--Check if the container is smaller then the window height - footer
     if (intContentHeight <= intWindowHeight - intFooterHeight - intHeaderHeight - 50)
     {
-        console.log("hier");
         $("div.content").outerHeight(intWindowHeight - intFooterHeight - intHeaderHeight - 50 + "px");
     }
 }
