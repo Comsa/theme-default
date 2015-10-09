@@ -203,10 +203,8 @@ dd {
 // grid breakpoint is reached (default of ~768px).
 
 .dl-horizontal {
-  dt{ padding-right: 5px;}
   dd {
     @include clearfix; // Clear the floated `dt` if an empty `dd` is present
-//    padding-left: 10px;
   }
 
   @media (min-width: $grid-float-breakpoint) {
@@ -218,7 +216,7 @@ dd {
       @include text-overflow;
     }
     dd {
-//      margin-left: 10px; //$dl-horizontal-offset;
+      margin-left: $dl-horizontal-offset;
     }
   }
 }
