@@ -19,31 +19,6 @@
 
         <div class="row">
 
-            <div class="col-sm-3">
-
-                {* Subnavigation *}
-                <nav>
-                    <h4 class="sr-only">{$lblSubnavigation|ucfirst}</h4>
-                    <ul class="list-unstyled subnavigation">
-                        {$var|getsubnavigation:'page':{$page.id}:2}
-                    </ul>
-                </nav>
-                <div class="clearfix">&nbsp;</div>
-
-                {* Left position *}
-                {iteration:positionLeft}
-                {option:positionLeft.blockIsHTML}
-                    <section>
-                        {$positionLeft.blockContent}
-                    </section>
-                {/option:positionLeft.blockIsHTML}
-                {option:!positionLeft.blockIsHTML}
-                {$positionLeft.blockContent}
-                {/option:!positionLeft.blockIsHTML}
-                {/iteration:positionLeft}
-            </div>
-            <!-- /.col-sm-3 -->
-
             <div class="col-sm-9">
                 {* Main position *}
                 {iteration:positionMain}
@@ -58,6 +33,22 @@
                 {/iteration:positionMain}
             </div>
             <!-- /.col-sm-9 -->
+
+            <div class="col-sm-3">
+                {* Right position *}
+                {iteration:positionRight}
+                {option:positionRight.blockIsHTML}
+                    <section>
+                        {$positionRight.blockContent}
+                    </section>
+                {/option:positionRight.blockIsHTML}
+                {option:!positionRight.blockIsHTML}
+                {$positionRight.blockContent}
+                {/option:!positionRight.blockIsHTML}
+                {/iteration:positionRight}
+            </div>
+            <!-- /.col-sm-3 -->
+
         </div>
         <!-- /.row -->
 
@@ -74,7 +65,10 @@
         {/iteration:positionFooter}
     </div>
     <!-- /.container -->
+
 </div>
 <!-- /#main.content -->
-
 {include:Core/Layout/Templates/Footer.tpl}
+
+</body>
+</html>

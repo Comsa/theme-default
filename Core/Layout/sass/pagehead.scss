@@ -1,7 +1,7 @@
 @import "mixins";
 
 /***  PAGEHEAD ***/
-
+/*
 div.pagehead
 {
   ul.visuals
@@ -42,12 +42,13 @@ div.pagehead
       }
     }
 
-  }
+  }*/
   /*** LOGO ***/
+/*
   a.logo
   {
     display: block;
-  }
+  }*/
   /*** END LOGO ***/
   /*** NAV-TOP NAV-LANG ***
   ul.nav-top, ul.nav-lang
@@ -105,6 +106,7 @@ div.pagehead
   }
   /*** END LANG ***/
   /*** NAV-MAIN ***/
+/*
   div.nav-responsive-container
   {
     ul.nav-main
@@ -160,43 +162,10 @@ div.pagehead
         }
       }
 
-      > li:nth-child(2n)
-      {
-        background-color: $brand-primary-dark;
-        ul
-        {
-          background-color: $brand-primary-dark;
-        }
-      }
-      > li:nth-child(5n)
-      {
-        background-color: $brand-secondary;
-        ul
-        {
-          background-color: $brand-secondary;
-        }
-      }
-      > li:nth-child(7n)
-      {
-        background-color: $brand-secondary-light;
-        ul
-        {
-          background-color: $brand-secondary-light;
-        }
-      }
     }
   }
   /*** END NAV-MAIN ***/
-  a.other-school
-  {
-    max-width: 100px;
-  }
-  img.heart
-  {
-    max-width: 200px !important;
-    position: absolute;
-    margin-top: 50px;
-  }
+/*
   a.facebook
   {
     margin-top: 30px;
@@ -206,6 +175,7 @@ div.pagehead
 
 /***  END PAGEHEAD ***/
 /***  BREADCRUMB ***/
+/*
 ol.breadcrumb
 {
   margin-bottom: 0;
@@ -221,9 +191,9 @@ ol.breadcrumb
     }
   }
 }
-
+*/
 /***  END BREADCRUMB ***/
-
+/*
 a.responsive-menu
 {
   @include font-custom();
@@ -238,4 +208,4 @@ a.responsive-menu
   {
     clear: both;
   }
-}
+}*/
