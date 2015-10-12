@@ -18,7 +18,9 @@
 	{* Favicon and Apple touch icon *}
 	<link rel="shortcut icon" href="{$THEME_URL}/favicon.ico" />
 	<link rel="apple-touch-icon" href="{$THEME_URL}/apple-touch-icon.png" />
-    <link href='https://fonts.googleapis.com/css?family=Rajdhani:400,300,600,500,700' rel='stylesheet' type='text/css'>
+    {*<link href='https://fonts.googleapis.com/css?family=Rajdhani:400,300,600,500,700' rel='stylesheet' type='text/css'>*}
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
 	{* Stylesheets *}
 	{iteration:cssFiles}
 		<link rel="stylesheet" href="{$cssFiles.file}" />

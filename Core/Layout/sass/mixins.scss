@@ -32,26 +32,26 @@
 }
 
 @mixin font-custom() {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: $font-custom;
 }
 
 @mixin font-custom-bold() {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: $font-custom;
   font-weight: 500;
 }
 
 @mixin font-custom-light() {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: $font-custom;
   font-weight: 300;
 }
 
 @mixin font-custom-text() {
-  font-family: 'Noticia Text', serif;
+  font-family: $font-custom-text;
   font-weight: 400;
 }
 
 @mixin font-custom-handwriting() {
-  font-family: 'Pacifico', cursive;
+  font-family: $font-custom-handwriting;
   font-weight: 400;
 }
 
