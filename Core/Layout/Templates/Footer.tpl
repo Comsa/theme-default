@@ -50,23 +50,9 @@
 <!-- /.pagefoot -->
 
 
-<noscript>
-    <div class="text-error">
-        <h4 class="sr-only">{$lblEnableJavascript|ucfirst}</h4>
-
-        <p>{$msgEnableJavascript}</p>
-    </div>
-</noscript>
-
-{* General Javascript *}
-{iteration:jsFiles}
-    <script src="{$jsFiles.file}"></script>
-{/iteration:jsFiles}
-
-{* Site wide HTML *}
-{$siteHTMLFooter}
 </div>
 <!-- /#body -->
+
 {** SLIDE OUT **}
 <nav id="menu">
     <ul class="list-unstyled">
@@ -82,5 +68,23 @@
 </nav>
 {** END SLIDE OUT **}
 {* END BODY , is started in Header.tpl*}
+
+
+<noscript>
+    <div class="text-error">
+        <h4 class="sr-only">{$lblEnableJavascript|ucfirst}</h4>
+
+        <p>{$msgEnableJavascript}</p>
+    </div>
+</noscript>
+
+{* General Javascript *}
+{iteration:jsFiles}
+    <script src="{$jsFiles.file}"></script>
+{/iteration:jsFiles}
+
+{* Site wide HTML *}
+{$siteHTMLFooter}
+
 </body>
 </html>
