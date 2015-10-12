@@ -16,7 +16,8 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <a href="/" class="logo">
-                            <img src="{$THEME_URL}/Core/Layout/Images/build/logo.jpg" class="img-responsive" alt="{$siteTitle}" title="{$siteTitle}"/>
+                            {*<img src="{$THEME_URL}/Core/Layout/Images/build/logo.jpg" class="img-responsive" alt="{$siteTitle}" title="{$siteTitle}"/>*}
+                            <img src="holder.js/350x100?auto=yes&text=Logo" class="img-responsive" alt="{$siteTitle}" title="{$siteTitle}"/>
                         </a>
                         <!-- /.logo -->
                     </div>
@@ -54,7 +55,8 @@
                     <div class="col-md-3">
                         <div class="fb-like hidden-sm hidden-xs pull-right" data-href="https://www.facebook.com/AtheneumVeurne" data-layout="box_count" data-action="like" data-show-faces="true" data-share="false"></div>
                         <a class="facebook pull-right hidden-sm hidden-xs" href="https://www.facebook.com/AtheneumVeurne?fref=ts" target="_blank">
-                            <img src="{$THEME_URL}/Core/Layout/Images/build/FB-FindUsonFacebook-online-114.png" class="img-responsive" alt="{$siteTitle}" title="{$siteTitle}"/>
+                            <i class="fa fa-facebook-official fa-2x"></i>
+                            <!-- /.fa fa-facebook-official -->
                         </a>
                         <!-- /.facebook -->
                     </div>

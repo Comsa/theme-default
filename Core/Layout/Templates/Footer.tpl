@@ -4,14 +4,15 @@
 
 
             <div class="row">
-                <div class="col-xs-4">
+                <div class="col-sm-4">
                     <a class="logo" href="/">
-                        <img src="{$THEME_URL}/Core/Layout/Images/build/logo.png" class="img-responsive" alt="{$siteTitle}" title="{$siteTitle}"/>
+                        {*<img src="{$THEME_URL}/Core/Layout/Images/build/logo.png" class="img-responsive" alt="{$siteTitle}" title="{$siteTitle}"/>*}
+                        <img src="holder.js/350x100?auto=yes&text=Logo" class="img-responsive" alt="{$siteTitle}" title="{$siteTitle}"/>
                     </a>
                     <!-- /.logo -->
                 </div>
                 <!-- /.col-xs-4 -->
-                <div class="col-xs-4">
+                <div class="col-sm-4">
                     <ul class="list-unstyled nav-footer">
                         {$var|getnavigation:'page':0:1:''}
 
@@ -20,7 +21,7 @@
                 </div>
                 <!-- /.col-xs-4 -->
 
-                <div class="col-xs-4">
+                <div class="col-sm-4">
                     <ul class="list-unstyled nav-footer">
                         {$var|getnavigation:'footer':0:1:''}
 
@@ -29,7 +30,10 @@
                 </div>
                 <!-- /.col-xs-4 -->
 
-                <div class="col-sm-6 ">
+                <div class="clearfix"></div>
+                <!-- /.clearfix -->
+
+                <div class="col-sm-6 col-md-4">
                     <p>&copy; {$now|date:'Y'} {$siteTitle}</p>
                     <!-- /.copyright -->
                 </div>
