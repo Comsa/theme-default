@@ -6,21 +6,23 @@ div.pagehead
 }
 
 /*** LOGO ***/
-/*
-  a.logo
-  {
-    display: block;
-  }*/
+
+a.logo
+{
+  display: block;
+}
+
 /*** END LOGO ***/
+
 /*** NAV-TOP NAV-LANG ***/
 ul.nav-top, ul.nav-lang
 {
   @include nav-layout-horizontal(0);
   @include font-custom-light();
-//  background-color: $gray-lighter;
-//  margin-top: 10px;
+  //  background-color: $gray-lighter;
+  //  margin-top: 10px;
   margin-right: 10px;
-  font-size: $font-size-base;
+  font-size: ceil($font-size-base * 0.9);
   padding: 3px 15px;
   li
   {
@@ -62,86 +64,80 @@ ul.nav-top, ul.nav-lang
 }
 
 /*** END NAV-TOP NAV-LANG ***/
-/*** LANG ***
+/*** LANG ***/
 ul.nav-lang
 {
   margin-right: 0;
+  padding-right: 0;
 }
+
 /*** END LANG ***/
 /*** NAV-MAIN ***/
-/*
-  div.nav-responsive-container
-  {
-    ul.nav-main
-    {
-      @include nav-layout-horizontal(24px);
-      @include nav-submenu();
-      @include font-custom-bold();
-      height: auto;
-      margin-bottom: 10px;
-      overflow: hidden;
 
+ul.nav-main
+{
+  @include nav-layout-horizontal(30px);
+  @include nav-submenu();
+  @include font-custom-bold();
+  height: auto;
+  margin-top: 15px;
+  overflow: hidden;
+
+  li
+  {
+    a
+    {
+      font-size: ceil($font-size-base*1.2);
+      text-decoration: none;
+    }
+
+    ul
+    {
+      background-color: $brand-primary; //rgba($brand-primary, 0.8);
+      margin: 0 0 0 -20px;
+      padding: 0;
+      padding-bottom: 10px;
       li
       {
-        border-top-right-radius: 15px;
-        background-color: $brand-primary;
-        margin-top: 15px;
-        padding: 8px 20px 2px;
-
+        padding: 5px 20px 0;
+        margin: 0;
         a
         {
-          font-size: 17px;
-          color: #FFFFFF;
           text-decoration: none;
         }
-
-        ul
-        {
-          background-color: $brand-primary; //rgba($brand-primary, 0.8);
-          margin: 0 0 0 -20px;
-          padding: 0;
-          padding-bottom: 10px;
-          li
-          {
-            padding: 5px 20px 0;
-            margin: 0;
-            a
-            {
-              text-decoration: none;
-            }
-          }
-        }
-
-        &.selected, &:hover
-        {
-          a
-          {
-            text-decoration: underline;
-          }
-          ul li a
-          {
-            text-decoration: none;
-          }
-        }
       }
+    }
 
+    &.selected, &:hover
+    {
+      a
+      {
+        text-decoration: underline;
+      }
+      ul li a
+      {
+        text-decoration: none;
+      }
     }
   }
-  /*** END NAV-MAIN ***/
-/*
-  a.facebook
-  {
-    margin-top: 30px;
-    margin-right: 10px;
-  }
+
 }
+
+/*** END NAV-MAIN ***/
+/*** FACEBOOK ***/
+
+a.facebook
+{
+  margin-top: 10px;
+}
+
+/*** END FACEBOOK ***/
 
 /***  END PAGEHEAD ***/
 /***  BREADCRUMB ***/
-/*
+
 ol.breadcrumb
 {
-  margin-bottom: 0;
   margin-top: 10px;
   li
   {
@@ -154,21 +150,20 @@ ol.breadcrumb
     }
   }
 }
-*/
+
 /***  END BREADCRUMB ***/
-/*
+
 a.responsive-menu
 {
   @include font-custom();
   font-weight: bold;
   color: $brand-primary;
   display: block;
-  font-size: 30px;
-  margin: -20px 10px 0 0;
+  font-size: ceil($font-size-base * 2);
   text-transform: uppercase;
   text-decoration: none;
-  &:after
+ /* &:after
   {
     clear: both;
-  }
-}*/
+  }*/
+}

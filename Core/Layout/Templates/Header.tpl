@@ -35,6 +35,11 @@
                         <!-- /.nav-top -->
                         <div class="clearfix"></div>
                         <!-- /.clearfix -->
+                        <a href="#menu" class="slideout-toggle responsive-menu pull-right visible-xs" title="{$siteTitle}">
+                            <span class="fa fa-bars"></span>
+                            <span>Menu</span>
+                        </a>
+                        <!-- /.responsive-menu -->
                     </div>
                     <!-- /.col-sm-6 -->
 
@@ -42,14 +47,10 @@
                 <!-- /.row -->
                 <div class="row">
                     <div class="col-md-9">
-                        <a href="#menu" class="slideout-toggle responsive-menu pull-right" title="{$siteTitle}">
-                            <span class="fa fa-bars"></span>
-                            <span>Menu</span>
-                        </a>
-                        <!-- /.responsive-menu -->
                         <ul class="nav-main list-unstyled">
                             {$var|getnavigation:'page':0:1}
                         </ul>
+
 
                     </div>
                     <div class="col-md-3">
