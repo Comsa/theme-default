@@ -13,27 +13,40 @@
                 </div>
                 <!-- /.col-xs-4 -->
                 <div class="col-sm-4">
-                    <ul class="list-unstyled nav-footer">
-                        {$var|getnavigation:'page':0:1:1}
+                    <nav>
+                        <ul class="list-unstyled nav-footer">
+                            {$var|getnavigation:'page':0:1:1}
+                        </ul>
+                        <!-- /.nav-footer -->
+                    </nav>
 
-                    </ul>
-                    <!-- /.nav-footer -->
                 </div>
                 <!-- /.col-xs-4 -->
 
                 <div class="col-sm-4">
-                    <ul class="list-unstyled nav-footer">
-                        {$var|getnavigation:'footer':0:1:''}
+                    <nav>
 
-                    </ul>
-                    <!-- /.nav-footer -->
+                        <ul class="list-unstyled nav-footer pull-right">
+                            {$var|getnavigation:'meta':0:1:1}
+                        </ul>
+                        <!-- /.nav-footer -->
+                    </nav>
+                    <div class="clearfix"></div>
+                    <nav>
+                        <small>
+                            <ul class="list-unstyled nav-footer pull-right">
+                                {$var|getnavigation:'footer':0:1:''}
+                            </ul>
+                            <!-- /.nav-footer -->
+                        </small>
+                    </nav>
                 </div>
                 <!-- /.col-xs-4 -->
 
                 <div class="clearfix"></div>
                 <!-- /.clearfix -->
 
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-6">
                     <p>&copy; {$now|date:'Y'} {$siteTitle}</p>
                     <!-- /.copyright -->
                 </div>
@@ -69,10 +82,10 @@
         {include:Core/Layout/Templates/Languages.tpl}
     </ul>
     <!-- /.nav-lang -->
-<a class="facebook pull-right" href="https://www.facebook.com/AtheneumVeurne?fref=ts" target="_blank">
-    <i class="fa fa-facebook-official fa-2x"></i>
-    <!-- /.fa fa-facebook-official -->
-</a>
+    <a class="facebook pull-right" href="https://www.facebook.com/AtheneumVeurne?fref=ts" target="_blank">
+        <i class="fa fa-facebook-official fa-2x"></i>
+        <!-- /.fa fa-facebook-official -->
+    </a>
 </nav>
 <!-- /.facebook -->
 
