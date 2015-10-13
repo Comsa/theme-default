@@ -117,6 +117,14 @@ ol.breadcrumb
     {
       color: $gray-dark;
       text-decoration: underline;
+      &:before
+      {
+        height: 0 !important;
+      }
+      &:after
+      {
+        height: 0 !important;
+      }
     }
   }
 }

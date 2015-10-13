@@ -9,14 +9,27 @@
 
 div.content
 {
-  a
+  /*a
   {
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 1px solid $brand-primary;
   }
   a:hover
   {
     text-decoration: none;
+    border-bottom: none;
+    @include transition(border, 0, 3s)
+  }*/
+
+  a
+  {
+    @include underline-animation($brand-primary);
+    &:hover
+    {
+      text-decoration: none;
+    }
   }
+
   strong
   {
     color: $brand-primary;
