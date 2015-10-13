@@ -85,18 +85,19 @@
 }
 
 /** Use specific list style type from a font**/
-@mixin list-style-marker() {
+@mixin list-style-marker($icon: '\f00c') {
   padding: 0;
   list-style: none;
-  margin-left: 10px;
+  margin-left: 20px;
   li
   {
     margin-left: 20px;
   }
   li:before
   {
-    font-family: 'Glyphicons Halflings';
-    content: '\e013';
+    color: $brand-primary;
+    font-family: 'FontAwesome';
+    content: $icon;
     padding-right: 5px;
     position: absolute;
     margin-left: -25px;

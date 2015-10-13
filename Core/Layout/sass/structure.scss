@@ -7,78 +7,43 @@
   padding-top: 15px;
 }
 
-/*
+div.content
+{
+  a
+  {
+    text-decoration: underline;
+  }
+  a:hover
+  {
+    text-decoration: none;
+  }
+  strong
+  {
+    color: $brand-primary;
+  }
+  ul
+  {
+    @include list-style-marker();
+  }
 
-h1, h2, h3, h4, h5, h6
+  img
+  {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
+h1, h2
 {
   color: $brand-primary;
   @include font-custom;
-  small 
+  small
   {
     color: $brand-secondary;
   }
 }
 
-h1,h2
-{
-  font-weight: bold;
-}
-hr
-{
-  border: 0;
-  height: 6px;
-  background-image: url(../Images/build/border.jpg);
-  background-repeat: repeat-x;
-  &.header
-  {
-    margin: 5px 0 20px;
-  }
-}
-
-
-
-img
-{
-  max-width: 100% !important;
-  height: auto !important;
-}
-
-div.content
-{
-  a
-  {
-//    text-decoration: underline;
-  }
-  a:hover
-  {
-    text-decoration: underline;
-  }
-  strong
-  {
-    //    color: $brand-secondary;
-  }
-}
-div.top
-{
-  p
-  {
-    margin: 0;
-  }
-}
-
-
-dl
-{
-
-  dt:after
-  {
-    content: '\003A';
-  }
-  dt.empty:after
-  {
-    content: '';
-  }
-}
+/*
 
 #cookieBar
 {

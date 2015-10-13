@@ -35,16 +35,16 @@
                         <!-- /.nav-top -->
                         <div class="clearfix"></div>
                         <!-- /.clearfix -->
-                        <a href="#menu" class="slideout-toggle responsive-menu pull-right visible-xs" title="{$siteTitle}">
-                            <span class="fa fa-bars"></span>
-                            <span>Menu</span>
-                        </a>
-                        <!-- /.responsive-menu -->
                     </div>
                     <!-- /.col-sm-6 -->
 
                 </div>
                 <!-- /.row -->
+                <a href="#menu" class="slideout-toggle responsive-menu pull-right visible-xs" title="{$siteTitle}">
+                    <span class="fa fa-bars"></span>
+                    <span>Menu</span>
+                </a>
+                <!-- /.responsive-menu -->
                 <div class="row">
                     <div class="col-md-9 hidden-xs">
                         <ul class="nav-main list-unstyled">
