@@ -123,6 +123,33 @@ ol.breadcrumb
 
 /***  END BREADCRUMB ***/
 
+/*** NAVBAR FIXED***/
+
+div.nav-fixed-top
+{
+  @include box-shadow(0px 1px 5px 0px darken($brand-primary, 20%));
+  background-color: #FFFFFF;
+  border-bottom: 1px solid $brand-primary;
+  display: none;
+  padding: 5px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  a.logo
+  {
+    margin-top: 5px;
+  }
+
+  ul.nav-main
+  {
+    margin: 20px 0 0;
+  }
+}
+
+/*** END NAVBAR FIXED***/
+
+/*** RESPONSIVE MENU ***/
 a.responsive-menu
 {
   @include font-custom();
@@ -136,3 +163,5 @@ a.responsive-menu
   text-decoration: none;
   text-align: right;
 }
+
+/*** END RESPONSIVE MENU ***/

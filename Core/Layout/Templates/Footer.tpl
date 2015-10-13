@@ -69,29 +69,10 @@
 
 </div>
 <!-- /#body -->
+{** MENU contains the slideout and sticky navigation**}
+{include:Core/Layout/Templates/Menu.tpl}
 
-{** SLIDE OUT **}
-<nav id="menu">
-    <ul class="list-unstyled">
-        {$var|getnavigation:'page':0:1:'':'/Core/Layout/Templates/NavigationResponsive.tpl'}
-    </ul>
-    <ul class="list-unstyled nav-small">
-        {$var|getnavigation:'meta':0:1:'':'/Core/Layout/Templates/NavigationResponsive.tpl'}
-    </ul>
-    <ul class="list-unstyled nav-small nav-inline">
-        {include:Core/Layout/Templates/Languages.tpl}
-    </ul>
-    <!-- /.nav-lang -->
-    <a class="facebook pull-right" href="https://www.facebook.com/AtheneumVeurne?fref=ts" target="_blank">
-        <i class="fa fa-facebook-official fa-2x"></i>
-        <!-- /.fa fa-facebook-official -->
-    </a>
-</nav>
-<!-- /.facebook -->
-
-{** END SLIDE OUT **}
 {* END BODY , is started in Header.tpl*}
-
 
 <noscript>
     <div class="text-error">
