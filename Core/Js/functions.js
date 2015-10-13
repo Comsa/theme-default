@@ -1,6 +1,6 @@
 $(window).resize(function ()
 {
-    //StickyFooter();
+    StickyFooter();
 });
 
 $(document).ready(function ()
@@ -56,9 +56,13 @@ $(document).ready(function ()
  * footer back to the ground
  *
  */
- /*
+
 function StickyFooter()
 {
+    var intHeaderHeight = $("div.pagehead").outerHeight(true);
+    var intHeaderHeight = $("div.pagehead .logo").outerHeight(true);
+    console.log(intHeaderHeight);
+
     //--Get height of texture-container
     var intContentHeight = $("div.content").outerHeight(true);
 
@@ -68,17 +72,18 @@ function StickyFooter()
     //--Get height of the footer
     var intHeaderHeight = $("div.pagehead").outerHeight(true);
     var intFooterHeight = $("div.pagefoot").outerHeight(true);
+    var intFooterMargin = parseInt($("div.pagefoot").css('margin-top'));
 
     //--Check if windowheight is smaller then the main height
-    if (intWindowHeight < intContentHeight + intFooterHeight + intHeaderHeight)
+    if (intWindowHeight < intContentHeight + intFooterHeight + intHeaderHeight - intFooterMargin)
     {
         intWindowHeight = intContentHeight + intFooterHeight + intHeaderHeight;
     }
     //--Check if the container is smaller then the window height - footer
     if (intContentHeight <= intWindowHeight - intFooterHeight - intHeaderHeight)
     {
-        $("div.content").outerHeight(intWindowHeight - intFooterHeight - intHeaderHeight - 0 + "px");
+        $("div.content").outerHeight(intWindowHeight - intFooterHeight - intHeaderHeight - intFooterMargin + "px");
 
     }
+
 }
-*/

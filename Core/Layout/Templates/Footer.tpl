@@ -6,8 +6,8 @@
             <div class="row">
                 <div class="col-sm-4">
                     <a class="logo" href="/">
-                        {*<img src="{$THEME_URL}/Core/Layout/Images/build/logo.png" class="img-responsive" alt="{$siteTitle}" title="{$siteTitle}"/>*}
-                        <img src="holder.js/350x100?auto=yes&text=Logo" class="img-responsive" alt="{$siteTitle}" title="{$siteTitle}"/>
+                        <img src="{$THEME_URL}/Core/Layout/Images/build/logo.jpg" class="img-responsive" alt="{$siteTitle}" title="{$siteTitle}"/>
+                        {*<img src="holder.js/350x100?auto=yes&text=Logo" class="img-responsive" alt="{$siteTitle}" title="{$siteTitle}"/>*}
                     </a>
                     <!-- /.logo -->
                 </div>
