@@ -1,6 +1,6 @@
 $(window).resize(function ()
 {
-    Resize();
+    //StickyFooter();
 });
 
 $(document).ready(function ()
@@ -8,7 +8,6 @@ $(document).ready(function ()
 
     var slideout = new Slideout({
         'panel': document.getElementById('body'),
-        //'panel': document.getElementsByClassname('container'),
         'menu': document.getElementById('menu'),
         'padding': 256,
         'tolerance': 70
@@ -20,11 +19,6 @@ $(document).ready(function ()
         //$('.nav-responsive-container').slideToggle('fast');
         slideout.toggle();
     });
-
-
-
-    Resize();
-
 
 
     //--Colorbox
@@ -53,23 +47,27 @@ $(document).ready(function ()
     });
 
 
+    //--Call Sticky Footer function
+    StickyFooter();
+
 });
 /**
  * resize Footer
  * footer back to the ground
  *
  */
-function Resize()
+ /*
+function StickyFooter()
 {
     //--Get height of texture-container
-    var intContentHeight = $("div.content").outerHeight();
+    var intContentHeight = $("div.content").outerHeight(true);
 
     //--Get height of the window
     var intWindowHeight = $(window).outerHeight();
 
     //--Get height of the footer
-    var intHeaderHeight = $("div.pagehead").outerHeight();
-    var intFooterHeight = $("div.pagefoot").outerHeight();
+    var intHeaderHeight = $("div.pagehead").outerHeight(true);
+    var intFooterHeight = $("div.pagefoot").outerHeight(true);
 
     //--Check if windowheight is smaller then the main height
     if (intWindowHeight < intContentHeight + intFooterHeight + intHeaderHeight)
@@ -77,8 +75,10 @@ function Resize()
         intWindowHeight = intContentHeight + intFooterHeight + intHeaderHeight;
     }
     //--Check if the container is smaller then the window height - footer
-    if (intContentHeight <= intWindowHeight - intFooterHeight - intHeaderHeight - 50)
+    if (intContentHeight <= intWindowHeight - intFooterHeight - intHeaderHeight)
     {
-        $("div.content").outerHeight(intWindowHeight - intFooterHeight - intHeaderHeight - 50 + "px");
+        $("div.content").outerHeight(intWindowHeight - intFooterHeight - intHeaderHeight - 0 + "px");
+
     }
 }
+*/

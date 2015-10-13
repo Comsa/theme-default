@@ -24,7 +24,7 @@
                 {* Subnavigation *}
                 <nav>
                     <h4 class="sr-only">{$lblSubnavigation|ucfirst}</h4>
-                    <ul class="list-unstyled subnavigation">
+                    <ul class="list-unstyled nav-sub">
                         {$var|getsubnavigation:'page':{$page.id}:2}
                     </ul>
                 </nav>

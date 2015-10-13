@@ -4,7 +4,7 @@
         {option:navigation.children}
         <a class="plus fa fa-plus visible-xs"></a>
         {/option:navigation.children}
-        <a href="{$navigation.link}" title="{$navigation.navigation_title}"{option:navigation.nofollow} rel="nofollow"{/option:navigation.nofollow}>{$navigation.navigation_title}</a>
+        <a href="{$navigation.link}" title="{$navigation.navigation_title}"{option:navigation.nofollow} rel="nofollow"{/option:navigation.nofollow}><span>{$navigation.navigation_title}</span></a>
         {*{option:navigation.selected}*}
         {option:navigation.children}
             <ul class="list-unstyled">

@@ -14,7 +14,7 @@
                 <!-- /.col-xs-4 -->
                 <div class="col-sm-4">
                     <ul class="list-unstyled nav-footer">
-                        {$var|getnavigation:'page':0:1:''}
+                        {$var|getnavigation:'page':0:1:1}
 
                     </ul>
                     <!-- /.nav-footer -->
@@ -65,11 +65,17 @@
     <ul class="list-unstyled nav-small">
         {$var|getnavigation:'meta':0:1:'':'/Core/Layout/Templates/NavigationResponsive.tpl'}
     </ul>
-    <ul class="list-unstyled nav-small">
+    <ul class="list-unstyled nav-small nav-inline">
         {include:Core/Layout/Templates/Languages.tpl}
     </ul>
     <!-- /.nav-lang -->
+<a class="facebook pull-right" href="https://www.facebook.com/AtheneumVeurne?fref=ts" target="_blank">
+    <i class="fa fa-facebook-official fa-2x"></i>
+    <!-- /.fa fa-facebook-official -->
+</a>
 </nav>
+<!-- /.facebook -->
+
 {** END SLIDE OUT **}
 {* END BODY , is started in Header.tpl*}
 
@@ -89,6 +95,3 @@
 
 {* Site wide HTML *}
 {$siteHTMLFooter}
-
-</body>
-</html>

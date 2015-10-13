@@ -2,6 +2,7 @@
 @import "bootstrap/mixins";
 @import "variables";
 
+/** Float all the elements for the horizontal main navigation**/
 @mixin nav-layout-horizontal($marginRight) {
   li
   {
@@ -31,6 +32,34 @@
   }
 }
 
+/** Inline navigation, seperated with character **/
+@mixin nav-inline($padding: 10px) {
+  overflow: hidden;
+  li
+  {
+    display: inline-block;
+
+    a:after
+    {
+      content: '\002F';
+      padding: 0 $padding;
+      text-decoration: none;
+    }
+    &:last-child
+    {
+      a:after
+      {
+        border-bottom: 0;
+        content: '';
+        color: lighten($gray-dark, 10%);
+        padding: 0;
+      }
+    }
+  }
+
+}
+
+/** Custom fonts**/
 @mixin font-custom() {
   font-family: $font-custom;
 }
@@ -55,6 +84,7 @@
   font-weight: 400;
 }
 
+/** Use specific list style type from a font**/
 @mixin list-style-marker() {
   padding: 0;
   list-style: none;
@@ -73,25 +103,27 @@
   }
 }
 
+/** Include subnavigation (on hover) **/
 @mixin nav-submenu() {
   li
   {
-
     ul
     {
-      @include border-bottom-radius(15px);
       display: none;
       height: auto;
+      margin: 0 0 0 -20px;
       overflow: hidden;
+      padding: 0 0 10px 0;
       position: absolute;
       width: auto;
       z-index: 100000;
       li
       {
-        color: #FFFFFF;
         background-color: transparent;
+        color: #FFFFFF;
         float: none;
-        margin-right: 0;
+        margin: 0;
+        padding: 5px 20px 0;
         a
         {
           border-bottom: 0;
@@ -99,14 +131,35 @@
           font-size: 16px;
         }
       }
-    }
-  }
 
-  li:hover
-  {
-    ul
+      li:hover
+      {
+        a
+        {
+          text-decoration: underline !important;
+        }
+      }
+    }
+
+    &.selected, &:hover
     {
-      display: block;
+      a
+      {
+        text-decoration: underline;
+      }
+
+      ul li a
+      {
+        text-decoration: none;
+      }
+    }
+
+    &:hover
+    {
+      ul
+      {
+        display: block;
+      }
     }
   }
 }

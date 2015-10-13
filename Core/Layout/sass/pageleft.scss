@@ -1,42 +1,33 @@
 @import "mixins";
 
 /***  NAV-LEFT ***/
-/*
-ul.subnavigation
+
+ul.nav-sub
 {
   margin-top: 20px;
   li
   {
-    //    border-bottom: 1px dotted $brand-primary;
-    background-image: url(../Images/build/border-light.jpg);
-    background-position: 0 bottom;
-    background-repeat: repeat-x;
-    padding: 2px 0;
-    margin-bottom: 2px;
+    display: inline-block;
+    background-color: $brand-primary;
+    margin-right: 5px;
 
     a
     {
-      //      @include font-custom-light();
-      //      color: $gray-dark;
-      color: $brand-primary;
+      color: lighten($brand-primary, 50%);
+      padding: 5px 10px;
       display: block;
-      font-size: 20px;
-      padding-left: 5px;
+      font-size: $font-size-base;
       text-decoration: none;
     }
   }
   li:hover, li.selected
   {
-    @include box-shadow(4px 4px 5px 0px rgba(0,0,0,0.2));
-    background-image: none;
-    background-color: $brand-primary;
-    border-top-right-radius: 10px;
+    background-color: darken($brand-primary, 10%);
     a
     {
-      color: #FFFFFF;
-      padding-left: 10px;
+      text-decoration: underline;
     }
   }
 }
-*/
+
 /*** END NAV-LEFT ***/

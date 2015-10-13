@@ -19,42 +19,32 @@ ul.nav-top, ul.nav-lang
 {
   @include nav-layout-horizontal(0);
   @include font-custom-light();
-  //  background-color: $gray-lighter;
-  //  margin-top: 10px;
-  margin-right: 10px;
+  @include nav-inline();
+  display: block;
+  clear: both;
   font-size: ceil($font-size-base * 0.9);
-  padding: 3px 15px;
+  margin: 0;
+  padding: 3px 0;
   li
   {
     a
     {
-      display: block;
       color: lighten($gray-dark, 10%);
-    }
-    a:after
-    {
-      content: '\002F';
-      padding: 0 10px;
-      text-decoration: none;
+      display: block;
     }
 
   }
-  li:last-child
-  {
-    a:after
-    {
-      content: '';
-      color: lighten($gray-dark, 10%);
-      padding: 0;
-      border-bottom: 0;
-    }
-  }
+
   li:hover, li.selected
   {
     a
     {
       color: $text-color;
       text-decoration: none;
+      span
+      {
+        text-decoration: underline;
+      }
     }
     a:after
     {
@@ -64,14 +54,7 @@ ul.nav-top, ul.nav-lang
 }
 
 /*** END NAV-TOP NAV-LANG ***/
-/*** LANG ***/
-ul.nav-lang
-{
-  margin-right: 0;
-  padding-right: 0;
-}
 
-/*** END LANG ***/
 /*** NAV-MAIN ***/
 
 ul.nav-main
@@ -94,13 +77,8 @@ ul.nav-main
     ul
     {
       background-color: $brand-primary; //rgba($brand-primary, 0.8);
-      margin: 0 0 0 -20px;
-      padding: 0;
-      padding-bottom: 10px;
       li
       {
-        padding: 5px 20px 0;
-        margin: 0;
         a
         {
           text-decoration: none;
@@ -108,19 +86,7 @@ ul.nav-main
       }
     }
 
-    &.selected, &:hover
-    {
-      a
-      {
-        text-decoration: underline;
-      }
-      ul li a
-      {
-        text-decoration: none;
-      }
-    }
   }
-
 }
 
 /*** END NAV-MAIN ***/
@@ -159,11 +125,7 @@ a.responsive-menu
   font-weight: bold;
   color: $brand-primary;
   display: block;
-  font-size: ceil($font-size-base * 2);
+  font-size: ceil($font-size-base * 1.6);
   text-transform: uppercase;
   text-decoration: none;
- /* &:after
-  {
-    clear: both;
-  }*/
 }

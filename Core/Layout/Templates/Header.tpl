@@ -24,12 +24,12 @@
                     <!-- /.col-sm-6 -->
 
                     <div class="col-sm-6">
-                        <ul class="list-unstyled nav-lang pull-right">
+                        <ul class="list-unstyled nav-lang pull-right hidden-xs">
                             {include:Core/Layout/Templates/Languages.tpl}
                         </ul>
                         <!-- /.nav-lang -->
 
-                        <ul class="list-unstyled nav-top pull-right">
+                        <ul class="list-unstyled nav-top pull-right hidden-xs">
                             {$var|getnavigation:'meta':0:1:'':'/Core/Layout/Templates/NavigationResponsive.tpl'}
                         </ul>
                         <!-- /.nav-top -->
@@ -46,15 +46,14 @@
                 </div>
                 <!-- /.row -->
                 <div class="row">
-                    <div class="col-md-9">
+                    <div class="col-md-9 hidden-xs">
                         <ul class="nav-main list-unstyled">
-                            {$var|getnavigation:'page':0:1}
+                            {$var|getnavigation:'page':0:2}
                         </ul>
 
 
                     </div>
                     <div class="col-md-3">
-                        <div class="fb-like hidden-sm hidden-xs pull-right" data-href="https://www.facebook.com/AtheneumVeurne" data-layout="box_count" data-action="like" data-show-faces="true" data-share="false"></div>
                         <a class="facebook pull-right hidden-sm hidden-xs" href="https://www.facebook.com/AtheneumVeurne?fref=ts" target="_blank">
                             <i class="fa fa-facebook-official fa-2x"></i>
                             <!-- /.fa fa-facebook-official -->

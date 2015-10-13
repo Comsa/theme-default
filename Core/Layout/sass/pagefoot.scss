@@ -1,13 +1,21 @@
 @import "mixins";
 
 /*** PAGEFOOT ***/
-/*
+
 div.pagefoot
 {
   background-color: $brand-primary;
-  color: #FFFFFF;
+  border-top: 10px solid darken($brand-primary, 10px);
+  color: lighten($brand-primary, 50%);
   margin-top: 20px;
   padding: 20px 0;
+
+  ul.nav-footer
+  {
+    @include nav-inline(5px);
+    margin-top: 5px;
+  }
+
   address
   {
     display: block;
@@ -17,25 +25,15 @@ div.pagefoot
   {
     color: #FFFFFF;
   }
+  a.logo
+  {
+    margin-bottom: 10px;
+  }
   p
   {
     margin: 0;
-    &.copyright
-    {
-      margin-top: 20px;
-    }
   }
-  a.other-school
-  {
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    img
-    {
-      display: block;
-      float: right;
-    }
-  }
+
 }
 
 /*** END PAGEFOOT ***/
