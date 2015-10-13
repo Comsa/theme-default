@@ -30,6 +30,11 @@
 {** END NAVBAR FIXED **}
 {** SLIDE OUT **}
 <nav id="menu">
+    <a href="" class="pull-right slideout-close">
+        <i class="fa fa-times fa-lg">
+        </i>
+        <!-- /.fa fa-times pull-right -->
+    </a>
     <ul class="list-unstyled">
         {$var|getnavigation:'page':0:1:'':'/Core/Layout/Templates/NavigationResponsive.tpl'}
     </ul>

@@ -13,10 +13,16 @@ $(document).ready(function ()
     //event handlers
     $('a.slideout-toggle').click(function ()
     {
-        //$('.nav-responsive-container').slideToggle('fast');
         slideout.toggle();
     });
 
+    //event handlers
+    $('a.slideout-close').click(function (e)
+    {
+        e.preventDefault();
+
+        slideout.close();
+    });
 
     //--Colorbox
     $("a.colorbox, a.fancybox").colorbox({maxWidth: '90%', maxHeight: '90%'});
