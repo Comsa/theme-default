@@ -9,7 +9,12 @@ div.pagefoot
   color: lighten($brand-primary, 50%);
   margin-top: 20px;
   padding: 20px 0;
+  text-align: center;
 
+  hr
+  {
+    border-top-color: darken($brand-primary, 5%);
+  }
   ul.nav-footer
   {
     @include nav-inline(5px);
@@ -20,6 +25,7 @@ div.pagefoot
   {
     display: block;
     line-height: 19px;
+    margin: 0;
   }
   a
   {
@@ -34,6 +40,10 @@ div.pagefoot
     margin: 0;
   }
 
+  .fa-inverse
+  {
+    color: $brand-primary;
+  }
 }
 
 /*** END PAGEFOOT ***/

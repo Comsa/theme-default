@@ -18,10 +18,9 @@
         {include:Core/Layout/Templates/Includes/Languages.tpl}
     </ul>
     <!-- /.nav-lang -->
-    <a class="facebook pull-right" href="https://www.facebook.com/AtheneumVeurne?fref=ts" target="_blank">
-        <i class="fa fa-facebook-official fa-2x"></i>
-        <!-- /.fa fa-facebook-official -->
-    </a>
+
+    {include:Core/Layout/Templates/Includes/Social.tpl}
+
 </nav>
 <!-- /.facebook -->
 
