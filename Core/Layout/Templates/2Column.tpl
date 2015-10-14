@@ -5,7 +5,7 @@
     <div class="container">
 
         {* BREADCRUMB *}
-        {include:Core/Layout/Templates/Breadcrumb.tpl}
+        {include:Core/Layout/Templates/Includes/Breadcrumb.tpl}
 
         {* Top position *}
         {iteration:positionTop}
@@ -21,7 +21,7 @@
 
         <div class="row">
 
-            <div class="col-sm-6">
+            <div class="col-sm-6 content-main">
                 {* Left position *}
                 {iteration:positionLeft}
                 {option:positionLeft.blockIsHTML}
@@ -36,7 +36,7 @@
             </div>
             <!-- /.col-sm-6 -->
 
-            <div class="col-sm-6">
+            <div class="col-sm-6 content-main">
                 {* Right position *}
                 {iteration:positionRight}
                 {option:positionRight.blockIsHTML}

@@ -3,7 +3,7 @@
 
     <div class="container">
         {* BREADCRUMB *}
-        {include:Core/Layout/Templates/Breadcrumb.tpl}
+        {include:Core/Layout/Templates/Includes/Breadcrumb.tpl}
 
         {* Top position *}
         {iteration:positionTop}
@@ -20,21 +20,26 @@
         <div class="row">
 
             <div class="col-sm-3">
-                {* Left position *}
-                {iteration:positionLeft}
-                {option:positionLeft.blockIsHTML}
-                    <section>
-                        {$positionLeft.blockContent}
-                    </section>
-                {/option:positionLeft.blockIsHTML}
-                {option:!positionLeft.blockIsHTML}
-                {$positionLeft.blockContent}
-                {/option:!positionLeft.blockIsHTML}
-                {/iteration:positionLeft}
+                <div class="pageleft">
+
+
+                    {* Left position *}
+                    {iteration:positionLeft}
+                    {option:positionLeft.blockIsHTML}
+                        <section>
+                            {$positionLeft.blockContent}
+                        </section>
+                    {/option:positionLeft.blockIsHTML}
+                    {option:!positionLeft.blockIsHTML}
+                    {$positionLeft.blockContent}
+                    {/option:!positionLeft.blockIsHTML}
+                    {/iteration:positionLeft}
+                </div>
+                <!-- /.pageleft -->
             </div>
             <!-- /.col-sm-3 -->
 
-            <div class="col-sm-9">
+            <div class="col-sm-9 content-main">
                 {* Main position *}
                 {iteration:positionMain}
                 {option:positionMain.blockIsHTML}

@@ -70,7 +70,8 @@
 </div>
 <!-- /#body -->
 {** MENU contains the slideout and sticky navigation**}
-{include:Core/Layout/Templates/Menu.tpl}
+{include:Core/Layout/Templates/Includes/StickyNav.tpl}
+{include:Core/Layout/Templates/Includes/Slideout.tpl}
 
 {* END BODY , is started in Header.tpl*}
 

@@ -1,4 +1,4 @@
-{include:Core/Layout/Templates/Html-head.tpl}
+{include:Core/Layout/Templates/Includes/Html-head.tpl}
 
 <body class="{$LANGUAGE}" itemscope itemtype="http://schema.org/WebPage">
 {* STARTBODY , is enden in Footer.tpl*}
@@ -9,7 +9,7 @@
     <div class="container">
 
 
-        {include:Core/Layout/Templates/Cookies.tpl}
+        {include:Core/Layout/Templates/Includes/Cookies.tpl}
 
         <header>
             <div class="pagehead">
@@ -25,12 +25,12 @@
 
                     <div class="col-sm-6">
                         <ul class="list-unstyled nav-lang pull-right hidden-xs">
-                            {include:Core/Layout/Templates/Languages.tpl}
+                            {include:Core/Layout/Templates/Includes/Languages.tpl}
                         </ul>
                         <!-- /.nav-lang -->
 
                         <ul class="list-unstyled nav-top pull-right hidden-xs">
-                            {$var|getnavigation:'meta':0:1:'':'/Core/Layout/Templates/NavigationResponsive.tpl'}
+                            {$var|getnavigation:'meta':0:1:'':'/Core/Layout/Templates/Includes/NavigationResponsive.tpl'}
                         </ul>
                         <!-- /.nav-top -->
                         <div class="clearfix"></div>

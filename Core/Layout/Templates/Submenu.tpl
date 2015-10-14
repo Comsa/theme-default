@@ -3,7 +3,7 @@
 
     <div class="container">
         {* BREADCRUMB *}
-        {include:Core/Layout/Templates/Breadcrumb.tpl}
+        {include:Core/Layout/Templates/Includes/Breadcrumb.tpl}
 
         {* Top position *}
         {iteration:positionTop}
@@ -44,7 +44,7 @@
             </div>
             <!-- /.col-sm-3 -->
 
-            <div class="col-sm-9">
+            <div class="col-sm-9 content-main">
                 {* Main position *}
                 {iteration:positionMain}
                 {option:positionMain.blockIsHTML}
