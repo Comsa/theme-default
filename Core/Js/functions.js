@@ -7,7 +7,8 @@ $(document).ready(function ()
         'panel': document.getElementById('body'),
         'menu': document.getElementById('menu'),
         'padding': 256,
-        'tolerance': 70
+        'tolerance': 70,
+        'side':'right'
     });
 
     //event handlers
