@@ -46,6 +46,15 @@ div.content-main
   }
 }
 
+div.content
+{
+  img
+  {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
 h1, h2
 {
   color: $brand-primary;
